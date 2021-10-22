@@ -1,10 +1,8 @@
 version: "3.9"
 services:
-  poc:
-    container_name: poc
+  first:
+    container_name: first
     restart: unless-stopped
-    env_file:
-      - .env
     build:
       context: ./
       dockerfile: Dockerfile
